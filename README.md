@@ -36,3 +36,18 @@ mvn clean install
 - **mvn clean:** Cleans the project by deleting the target directory.
 - **mvn install:** Compiles the code, runs tests, and packages the application into a JAR file.
 
+### Run the Application
+
+After building the application, you can run it with:
+
+```bash
+mvn spring-boot:run
+```
+
+Alternatively, you can run the JAR file directly:
+
+```bash
+java -jar target/gpa-calculator-springboot-app.jar
+```
+
+The application will start running on http://localhost:8080 by default.
