@@ -33,3 +33,5 @@ Navigate to the project directory and build the application using Maven:
 ```bash
 mvn clean install
 ```
+mvn clean: Cleans the project by deleting the target directory.
+mvn install: Compiles the code, runs tests, and packages the application into a JAR file.
