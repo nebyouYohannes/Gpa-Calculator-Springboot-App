@@ -25,10 +25,11 @@ To clone the repository, run:
 ```bash
 git clone https://github.com/nebyouYohannes/Gpa-Calculator-Springboot-App.git
 cd Gpa-Calculator-Springboot-App
-
+``` 
 ### Build the Application
 
 Navigate to the project directory and build the application using Maven:
 
 ```bash
 mvn clean install
+```
