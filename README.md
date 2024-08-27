@@ -1,4 +1,4 @@
-# GPA Calculator Spring Boot App
+# GPA Calculator Spring Boot App Using RDF Storage
 
 ## Overview
 
