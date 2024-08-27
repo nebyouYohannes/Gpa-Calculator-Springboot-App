@@ -1,0 +1,226 @@
+@prefix ex:   <http://example.org/amazon#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Course17  rdf:type   ex:Course;
+        ex:hasCode      "CS221";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Programming I" .
+
+ex:Course11  rdf:type   ex:Course;
+        ex:hasCode      "CC113";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "General Psychology" .
+
+ex:Course7  rdf:type    ex:Course;
+        ex:hasCode      "SE221";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Computer Organization & Assembly" .
+
+ex:Course30  rdf:type   ex:Course;
+        ex:hasCode      "CC151";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "English II" .
+
+ex:Course36  rdf:type   ex:Course;
+        ex:hasCode      "SE312";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Web I" .
+
+ex:Course27  rdf:type   ex:Course;
+        ex:hasCode      "SE321";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Computer Networks" .
+
+ex:Course21  rdf:type   ex:Course;
+        ex:hasCode      "CC112";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Logic & Critical Thinking" .
+
+ex:Course18  rdf:type   ex:Course;
+        ex:hasCode      "CS211";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "ICT Fundamentals" .
+
+ex:Course12  rdf:type   ex:Course;
+        ex:hasCode      "CS222";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Programming II" .
+
+ex:Course37  rdf:type   ex:Course;
+        ex:hasCode      "CC313";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "Economics" .
+
+ex:Course31  rdf:type   ex:Course;
+        ex:hasCode      "SE313";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Object Oriented Software Engineering (OOSE)" .
+
+ex:Course8  rdf:type    ex:Course;
+        ex:hasCode      "CC124";
+        ex:hasCreditHr  "3"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Moral & Civics Education" .
+
+ex:Course28  rdf:type   ex:Course;
+        ex:hasCode      "SE334";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "Advanced Database" .
+
+ex:Course22  rdf:type   ex:Course;
+        ex:hasCode      "CC122";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "History" .
+
+ex:Course19  rdf:type   ex:Course;
+        ex:hasCode      "SE143";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Database Management Systems" .
+
+ex:Course13  rdf:type   ex:Course;
+        ex:hasCode      "CS262";
+        ex:hasCreditHr  "3"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Introduction To Unix" .
+
+ex:Course9  rdf:type    ex:Course;
+        ex:hasCode      "CC234";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "Statistics & Probability" .
+
+ex:Course32  rdf:type   ex:Course;
+        ex:hasCode      "SE311";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Operating System" .
+
+ex:Course38  rdf:type   ex:Course;
+        ex:hasCode      "CC399";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Entrepreneurship" .
+
+ex:Course29  rdf:type   ex:Course;
+        ex:hasCode      "CC114";
+        ex:hasCreditHr  "3"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "Antripology" .
+
+ex:Course23  rdf:type   ex:Course;
+        ex:hasCode      "SE231";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "C+";
+        ex:hasName      "Logic Design" .
+
+ex:Course14  rdf:type   ex:Course;
+        ex:hasCode      "CS213";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "C";
+        ex:hasName      "Emerging Technology" .
+
+ex:Course33  rdf:type   ex:Course;
+        ex:hasCode      "CC213";
+        ex:hasCreditHr  "3"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "Inclusiveness" .
+
+ex:Course24  rdf:type   ex:Course;
+        ex:hasCode      "SE222";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Data Structures" .
+
+ex:Course15  rdf:type   ex:Course;
+        ex:hasCode      "CC150";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "English I" .
+
+ex:Course34  rdf:type   ex:Course;
+        ex:hasCode      "CC140";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "C+";
+        ex:hasName      "Physics" .
+
+ex:Course25  rdf:type   ex:Course;
+        ex:hasCode      "SE263";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Windows Programming" .
+
+ex:Course16  rdf:type   ex:Course;
+        ex:hasCode      "CC130";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B";
+        ex:hasName      "Math" .
+
+ex:Course10  rdf:type   ex:Course;
+        ex:hasCode      "CC214";
+        ex:hasCreditHr  "3"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Global Trends" .
+
+ex:Course35  rdf:type   ex:Course;
+        ex:hasCode      "SE332";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "B+";
+        ex:hasName      "Requirement Engineering" .
+
+ex:Course26  rdf:type   ex:Course;
+        ex:hasCode      "CC121";
+        ex:hasCreditHr  "4"^^xsd:int;
+        ex:hasGrade     "A";
+        ex:hasName      "Geography" .
+
+ex:Course20  rdf:type   ex:Course;
+        ex:hasCode      "SE211";
+        ex:hasCreditHr  "5"^^xsd:int;
+        ex:hasGrade     "C+";
+        ex:hasName      "Object Oriented Programming (Java)" .
+<http://example.org/amazon#Course41>
+        a       <http://example.org/amazon#Course>;
+        <http://example.org/amazon#hasCode>
+                "SE333";
+        <http://example.org/amazon#hasCreditHr>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+        <http://example.org/amazon#hasGrade>
+                "B";
+        <http://example.org/amazon#hasName>
+                "Web II" .
+<http://example.org/amazon#Course42>
+        a       <http://example.org/amazon#Course>;
+        <http://example.org/amazon#hasCode>
+                "SE331";
+        <http://example.org/amazon#hasCreditHr>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+        <http://example.org/amazon#hasGrade>
+                "A";
+        <http://example.org/amazon#hasName>
+                "Software Architecture" .
+<http://example.org/amazon#Course43>
+        a       <http://example.org/amazon#Course>;
+        <http://example.org/amazon#hasCode>
+                "SE372";
+        <http://example.org/amazon#hasCreditHr>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+        <http://example.org/amazon#hasGrade>
+                "B";
+        <http://example.org/amazon#hasName>
+                "Human Computer Interaction" .

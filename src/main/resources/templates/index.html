@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gpa Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">GPA CALCULATOR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="addCourse">ADD COURSE </a>
+      </li>
+    
+     
+    </ul>
+  </div>
+</nav>
+	
+	
+	<div class="mx-auto">
+    <div class="container mt-4  justify-content-center">        
+   <form th:action="@{/}" method="get">
+		<h1>Search Courses</h1>
+      <div class="input-group">
+        <input type="text" name="search" class="form-control col-10" placeholder="Search for a product">
+        <div class="input-group-append">
+          <button class="btn btn-success" type="submit">Search / List All Courses</button> <br> <br>   
+        </div>
+        
+      </div>
+   </form>
+   
+  
+    <form th:action="@{/calculateGpa}" method="post">
+   <button type="submit" class="btn btn-primary btn-lg active" >Calculate CGPA</button> <br> <br> 
+    </form>
+    
+  </div>
+   
+   
+     <div class="container">
+		 <div th:if="${empt}" class="w3-panel w3-pale-red w3-border">
+			<h5 class="danger"> YOU HAVEN'T ADDED ANY COURSES YET.</h5>
+		</div>
+		
+		
+		<div th:if="${dele}" class="w3-panel w3-pale-green w3-border">
+			<h5 class="success"> ✅ Successfully deleted.</h5>
+		</div>
+		 <div class="circ" th:if="${cgpa} and ${totCredit} and ${totCourses}">
+		 <div class="circlebox">
+			 <h3 th:if="${cgpa}"><b>CGPA <br> <span th:text="${cgpa}"></span></b></h3>
+		</div>
+		<div class="circlebox">
+			<h3 th:if="${totCredit}"><b> Credit Hrs <br>  <span th:text="${totCredit}"></span></b></h3>
+		</div >
+   		<div class="circlebox">
+			<h3 th:if="${totCourses}"><b>Courses Taken <br>  <span th:text="${totCourses}"></span></b></h3>   
+		 </div>
+		 </div>
+		 
+   
+        <table class="table table-bordered text-center" th:if="${not #lists.isEmpty(courses)}">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Code </th>
+                    <th scope="col">Name </th>
+                    <th scope="col">Credit Hr </th>
+                    <th scope="col">grade </th>
+                    <th scope="col">Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr th:each="course : ${courses}">
+                <td th:text="${course.Code}"></td>
+                <td th:text="${course.Name}"></td>
+                <td th:text="${course.creditHr}"></td>
+                <td th:text="${course.grade}"></td>
+                
+                
+               
+                
+                <td>
+					
+                <form action="/delete" method="post">
+					<input type="hidden" name="title" th:value="${course.Code}">
+					<input type="hidden" name="price" th:value="${course.Name}">
+					<input type="hidden" name="category" th:value="${course.creditHr}">
+					<input type="hidden" name="category" th:value="${course.grade}">
+                    <button type="submit" class="btn btn-danger" >Delete</button>
+           		 </form>
+               		 
+            </td>
+            
+            
+                
+            </tr>
+                
+            </tbody>
+        </table>
+        
+     
+</div>
+    </div>
+    
+	
+    <!-- Add Bootstrap JS and Popper.js for Bootstrap functionality (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

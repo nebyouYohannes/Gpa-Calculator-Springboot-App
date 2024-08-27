@@ -1,0 +1,98 @@
+
+
+.circlebox{
+	height: 200px;
+	width: 200px;
+/*	background-color: rgb(33, 150, 243); */
+	border-radius: 50%;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+  
+}
+
+.circ{
+	display: flex;
+	flex-wrap: wrap;
+	 justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  
+}
+
+h3{
+	color: rgb(52, 58, 64);
+	
+}
+
+.warn{
+	color: red;
+}
+
+.success{
+	color: rgb(94, 105, 25); 
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg{
+	width: auto;
+	height: 50px;
+	background-color: rgb(230, 238, 209);
+	text-align: center;
+	border-radius: 5px;
+	
+}
+
+.alert{
+	width: auto;
+	height: 50px;
+	background-color: rgb(252, 211, 210);
+	text-align: center;
+	border-radius: 5px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(128, 18, 17);
+}
+
+.danger{
+	color: rgb(128, 18, 17);
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.bt{
+	margin: 10px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addbtn{
+	width: 400px;
+}
+
+.contain{
+	width: 100%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
